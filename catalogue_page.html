@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <title>
+        Nice Books
+    </title>
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="icon" href=
+    "images/registration.png"
+              type="image/x-icon">
+</head>
+  <style>
+    .lable{
+    font-family: candara;
+    border-radius: 25px;
+}
+    </style>
+<body>
+    <header class = "heading">
+        Catalogue
+    </header>
+    <div class ="bg-img">
+    <div class = "centred">
+     <br><br>
+      
+
+<div id="capital"></div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Book Catalogue</title>
+      
+    </head>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Books Grid</title>
+      <style>
+        /* Basic CSS for styling */
+        *{
+            color: white;
+            font-family: candara;
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+          grid-gap: 20px;
+        }
+        .book {
+          border:none;
+          padding: 20px;
+          text-align: center;
+        }
+        .book img {
+          max-width: 100%;
+          height: auto;
+        }
+        .book-title {
+          font-weight: bold;
+          margin-top: 10px;
+        }
+        
+        p{
+            color: white;
+        }
+        .price {
+          color: aqua;
+        }
+    
+      </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <!-- Book 1 -->
+        <div class="book">
+          <img class="img1" src="images/book1.jpg" alt="Book 1">
+          <div class="book-details">
+            <h2 class="book-title">The Great Gatsby</h2>
+            <p class="author">F. Scott Fitzgerald</p>
+            <p class="price">₹1000</p>
+            
+          </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book">
+          <img class="img1" src="images/book2.jpg" alt="Book 2">
+          <div class="book-details">
+            <h2 class="book-title">Alone - A True Story</h2>
+            <p class="author">Morgan Maxwell</p>
+            <p class="price">₹800</p>
+            
+          </div>
+        </div>
+        <div class="book">
+            <img class="img1" src="images/book3.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">The Beloved Girls</h2>
+              <p class="author">Harriet Evans</p>
+              <p class="price">₹600</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book4.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Digital Fortress</h2>
+              <p class="author">Dan Brown</p>
+              <p class="price">₹600</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book5.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Chamber of Secret</h2>
+              <p class="author">J.K Rowling</p>
+              <p class="price">₹200</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book6.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Deathly Hallows</h2>
+              <p class="author">J.K Rowling</p>
+              <p class="price">₹600</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book7.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Philosopher's Stone</h2>
+              <p class="author">J.K Rowling</p>
+              <p class="price">₹900</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book8.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Goblet of Fire</h2>
+              <p class="author">J.K Rowling</p>
+              <p class="price">₹300</p>
+              
+            </div>
+          </div>
+          <div class="book">
+            <img class="img1" src="images/book9.jpg" alt="Book 2">
+            <div class="book-details">
+              <h2 class="book-title">Prisoner of Azkaban</h2>
+              <p class="author">J.K Rowling</p>
+              <p class="price">₹350</p>
+              
+            </div>
+          </div>
+       
+        <!-- Add more books as needed -->
+      </div>
+    </body>
+    </html>
+    
+<script>
+function displayCapital() {
+var select = document.getElementById("companySelect");
+var capitalDiv = document.getElementById("capital");
+
+var selectedCompany = select.options[select.selectedIndex].text;
+
+// You can replace the capital values with the actual capital for each company
+var capitalMap = {
+"Harry Potter": "1. Harry Potter and the Sorcerer’s Stone (1997)"+"\n"+"2. Harry Potter and the Chamber of Secrets (1998)\n3. Harry Potter and the Prisoner of Azkaban (1999)\n4. Harry Potter and the Goblet of Fire (2000)\n5. Harry Potter and the Order of the Phoenix (2003)\n6. Harry Potter and the Half-Blood Prince (2005)\n7. Harry Potter and the Deathly Hallows (2007)\n8. Harry Potter and the Cursed Child (2016)",
+"Dan Brown": "1. Angels & Demons (2000) · 2. The Da Vinci Code (2003) · 3. The Lost Symbol (2009)",
+"Hunger Games": "1. The Hunger Games · 2. The Hunger Games: Catching Fire · 3. The Hunger Games: Mockingjay · 4. The Ballad of Songbirds and Snakes.",
+};
+
+var capital = capitalMap[selectedCompany];
+capitalDiv.textContent = capital;
+}
+</script>
+    </div>
+
+</body>
+</html>

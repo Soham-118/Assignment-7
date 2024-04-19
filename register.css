@@ -1,0 +1,33 @@
+*{
+    color: rgb(0, 0, 0);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/bg\ \(2\).jpg");
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container {
+    width: 400px;
+    background-image: url("images/login.jpg");
+    padding: 30px;
+    border-radius: 50px;
+}
+.lable{
+    font-family: candara;
+    
+}
+.lable1{
+    color: black;
+    font-family: candara;
+    
+}
+.lable2{
+    color: black;
+    font-family: candara;
+    
+}
